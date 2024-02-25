@@ -1,21 +1,22 @@
 const messages = {
-    name: {
-        required: 'El nombre es obligatorio',
-        wrong: 'El nombre no es válido'
-    }
-}
+	name: {
+		required: 'El nombre es obligatorio',
+		wrong: 'El nombre no es válido'
+	}
+};
 const patterns = {
-    onlyLetters: /^[a-z]+$/
-}
+	onlyLetters: /^[a-z]+$/
+};
+
 export const FORM_VALIDATIONS = {
-    NAME: {
-        required: messages.name.required,
-        pattern: {
-            value: patterns.onlyLetters,
-            messages: messages.name.wrong
-        }
-    }
-}
+	NAME: {
+		required: messages.name.required,
+		pattern: {
+			value: patterns.onlyLetters,
+			message: messages.name.wrong
+		}
+	}
+};
 
 /* 
                 required: 'El nombre es obligatorio',
